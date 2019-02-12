@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { connect, Provider } from 'react-redux';
 
+// Styles
+import 'index.scss';
+
 // Components
 import App from './components/App';
 
