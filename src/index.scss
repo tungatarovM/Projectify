@@ -1,1 +1,8 @@
-@import 'scss/main.scss';
+@import 'scss/abstracts/variables';
+
+@import 'scss/base/utilities';
+@import 'scss/base/base';
+
+@import 'scss/components//button.scss';
+@import 'scss/components/navigation';
+@import 'scss/components/form';

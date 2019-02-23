@@ -1,0 +1,32 @@
+.btn {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+
+  transform: translateY(-.1rem);
+  box-shadow: 0 .5rem 1rem rgba(#000, .2);
+  transition: all .2s;
+
+  &:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(#000, .2);
+  }
+
+  &:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(#000, .2);
+  }
+
+  &--blue {
+    background-color: $secondary-blue-light;
+  }
+}

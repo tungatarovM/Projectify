@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import { createStore, compose, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-import { createFirestoreInstance, getFirestore } from 'redux-firestore';
-import { ReactReduxFirebaseProvider, getFirebase } from 'react-redux-firebase';
+import { createFirestoreInstance } from 'redux-firestore';
+import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 
 // Styles
-import './scss/main.scss';
+import './index.scss';
 
 // Firebase config
 import config from './config/firebase';
@@ -28,10 +28,13 @@ const store = createStore(
   )
 );
 
+// react-redux-firebase config
 const rrfConfig = {
-  userProfile: 'users'
+  userProfile: 'users',
+  useFirestoreForProfile: true
 };
 
+// react-redux-firebase props
 const rrfProps = {
   firebase: config,
   config: rrfConfig,

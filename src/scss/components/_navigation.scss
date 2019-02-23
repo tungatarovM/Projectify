@@ -1,0 +1,36 @@
+.main-nav {
+  height: 7rem;
+  font-size: 1.6rem;
+  color: white;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  background-color: $primary-blue-light;
+
+  &__container {
+    width: 80%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__name {
+    flex: 1;
+  }
+
+  &__list {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+  }
+  
+  &__item {
+    margin: 0 3rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+}

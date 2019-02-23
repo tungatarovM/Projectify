@@ -5,10 +5,8 @@ import { compose } from 'redux';
 
 class ProjectList extends Component {
   render() {
-    console.log(this.props);
-    console.log(this.props.projects);
     return (
-      <div>Home</div>
+      <div>ProjectList</div>
     );
   }
 }
